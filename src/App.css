@@ -11,7 +11,25 @@
   }
 }
 
+.mobile-info{
+  position:absolute;
+  bottom:0;
+  color:white;
+  background-color:rgba(0,0,0,0.8);
+  color: #ffffff;
+  display: none;
+}
 
+.mobile-info h1{
+  text-align: left;
+  color: #ffffff;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  padding-bottom: 15px;
+  text-transform: capitalize;
+
+
+}
 .App-header {
   min-height: 100vh;
   background-image: url("../src/assets/image/sky.jpg");
@@ -73,13 +91,14 @@ filter: blur(8px);
 }
 
 .profile_image{
-  background-image:url("https://media-exp1.licdn.com/dms/image/C4E03AQFO4VEaJqEiLQ/profile-displayphoto-shrink_400_400/0/1533666284275?e=1614816000&v=beta&t=IO_RX_ReShNyJVOn6fyIGiAfdSDtsw8r0OHsT3N2jCc");
-  background-position: center;
+  /* background-image:url("https://media-exp1.licdn.com/dms/image/C4E03AQFO4VEaJqEiLQ/profile-displayphoto-shrink_400_400/0/1533666284275?e=1614816000&v=beta&t=IO_RX_ReShNyJVOn6fyIGiAfdSDtsw8r0OHsT3N2jCc"); */
+  background-position: 50% 25%;
   background-size:cover;
   width:100%;
   height: 200px;
   position: relative;
   background-repeat: no-repeat;
+  background-image: url(./assets/image/ayo.jpg)
   
 }
 
@@ -345,6 +364,18 @@ filter: blur(8px);
         /* mobile */
 
         @media only screen and (max-width: 600px) {
+          .flip-card:hover .card_inner {
+            transform: rotateY(0deg);
+          }
+          .mobile-info{
+            position:absolute;
+            bottom:0;
+            color:white;
+            background-color:rgba(0, 0, 0, 0.8);
+            color: #ffffff;
+            display: block;
+            width: 100%;
+          }
           .name_intro{
             left:0
           }
@@ -390,6 +421,7 @@ filter: blur(8px);
          }
         
         @media only screen and (max-width: 375px) {
+          
           .side_bar_nav{
             width:60vw;
           }

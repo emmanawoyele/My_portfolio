@@ -20,9 +20,10 @@ function About(props){
               <h1>FrontEnd Developer</h1>
               <p> I'm Self-Taught Developer And Passionate Learner With
             The Ability To Create Responsive Websites Using HTML,
-             CSS, And Javascript.
-            I'm Comfortable To Work In A T
-            eam Or As An Individual.
+             CSS, And Javascript and React.
+            I'm Comfortable To Work In 
+            team Or Individually.
+           
           </p>
           
            </div>

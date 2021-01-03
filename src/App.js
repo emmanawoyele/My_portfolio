@@ -89,6 +89,11 @@ menuOpenerHandler=()=>{
      <div className="card_inner">
        <div className ="card_front">
        <img src={item.imgUrl} alt=""/>
+       <div className="mobile-info">
+       <h1>Project Name:<span>{item.name}</span></h1>
+   <h1>Project Type:<span>{item.type}</span></h1>
+ 
+       </div>
        </div>
        <div className="card_back">
       
