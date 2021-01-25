@@ -14,14 +14,14 @@ import Contact from './contact';
 import PersonalCard from './personal_card'
 class App extends Component {
   state = { 
-    name:'Inioluwa Awoyele',
+    name:'Emmanuel Awoyele',
     projectInfo,
-    Portfolio:["All","Reacts","Shopify","Html-Emails"],
+    Portfolio:["All","React","Shopify","Html-Emails"],
     myPortolio:projectInfo,
     time:"",
     type_1:"Html-Emails",
     type_2:"Shopify",
-    type_3:"Reacts",
+    type_3:"React",
     menu_opener:false,
     SideNavbar:true
    }
@@ -54,7 +54,7 @@ class App extends Component {
           case "Shopify":
             return item.type ===this.state.type_2
             
-            case "Reacts":
+            case "React":
               return item.type ===this.state.type_3
               
               case "All":
@@ -116,8 +116,11 @@ menuOpenerHandler=()=>{
     })
     return ( 
       <div>
+        
        <HomePage menu_opener={this.menuOpenerHandler}/>
       <div>
+        
+        
           <Router>
             
             <SideNavbarContainer date={this.state.time}  

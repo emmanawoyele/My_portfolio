@@ -6,26 +6,33 @@ const Password ='Timberland0'
 
 var projectInfo=[
      {
-          type:'Reacts',
+          type:'React',
           name:'Real Estate',
           description:'A Real estate website built with React',
           imgUrl:"https://lid.zoocdn.com/354/255/069102b174df59a0784389e562efa9e5f5cd32db.jpg",
           link:"https://modest-agnesi-e2ce19.netlify.app/"
      },
      {
-          type:'Reacts',
+          type:'React',
           name:'Burger Builder App',
           description:'A buger builder that allows you to add desired ingredients to your burger.',
           imgUrl:"https://www.thespruceeats.com/thmb/LDrkRByRnQInfZF25HyLYSJ0Iyg=/960x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/garlic-burger-patties-333503-hero-01-e4df660ff27b4e5194fdff6d703a4f83.jpg",
           link:"https://emmanawoyele.github.io/BurgerBuilder/"
      },
  {
-  type:'Reacts',
-  name:'Removal Website',
-  description:'A website built for Removal company using React js,React route, Sass',
-  imgUrl:Removal,
-  link:"https://youthful-mahavira-fb28c1.netlify.app/"
+  type:'React',
+  name:'Movie App',
+  description:'A Movie App built with React',
+  imgUrl:"https://image.tmdb.org/t/p/w1280/poSVFa61vWSCdl6PXthOvoCY6E0.jpg",
+  link:"https://quirky-ritchie-b8e786.netlify.app/"
   },
+  {
+     type:'React',
+     name:'Removal Website',
+     description:'A website built for Removal company using React js,React route, Sass',
+     imgUrl:Removal,
+     link:"https://youthful-mahavira-fb28c1.netlify.app/"
+     },
   {
    type:'Html-Emails',
    name:'Promotional Email',

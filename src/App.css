@@ -364,6 +364,11 @@ filter: blur(8px);
         /* mobile */
 
         @media only screen and (max-width: 600px) {
+          .profile-des{
+            width:0px;
+            grid-template-columns: 400px;
+            
+          }
           .flip-card:hover .card_inner {
             transform: rotateY(0deg);
           }
