@@ -15,7 +15,7 @@
   position:absolute;
   bottom:0;
   color:white;
-  background-color:rgba(0,0,0,0.8);
+  background-color:#17181b;
   color: #ffffff;
   display: none;
 }
@@ -46,8 +46,10 @@
   position:absolute;
 }
 .main{
-  margin-left:300px;
+  /* margin-left:300px; */
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 .menu_opener{
   display: none;
@@ -190,9 +192,8 @@ filter: blur(8px);
 
   .profile-des{
     display: grid;
-    grid-template-columns: 400px 400px;
+    grid-template-columns: 1fr 1fr;
     grid-gap:23px;
-    width:900px;
     margin-top:20px;
     padding-top:20px;
     padding-right:15px;
@@ -200,11 +201,12 @@ filter: blur(8px);
   }
   .profile_title_des h1 {
     color: rgb(255, 254, 254);
-    font-size: 30px;
+    font-size: 18px;
     font-weight:600;
     margin: 30px 30px 30px 0px;
     text-transform:capitalize;
     text-align:left;
+    line-height: 1;
   }
   .profile_title_des {
     text-align: left;
@@ -212,7 +214,7 @@ filter: blur(8px);
     font-weight: 400;
     font-size: 18px;
     /* font-family: 'Playfair Display',sans-serif; */
-    line-height: 21px;
+    /* line-height: 21px; */
     letter-spacing: 4px;
   }
   .profile_title_des  p{
@@ -286,8 +288,8 @@ filter: blur(8px);
     display:grid;
     grid-gap:20px;
     grid-template-columns: 1fr 1fr 1fr ;
-    width: 900px;
     padding-bottom: 20px;
+    padding-right: 34px;
 
     }
     .flip-card img{
@@ -299,7 +301,7 @@ filter: blur(8px);
     }
     .flip-card {
       background-color: transparent;
-      width: 300px;
+      width: 100%;
       height: 300px;
       perspective: 1000px;
       cursor: pointer;
@@ -346,7 +348,7 @@ filter: blur(8px);
   padding:20px;
   
     }
-    .card_back_text h1 {
+    .card_back_text p {
       text-align: left;
       color:#fff;
       font-size: 16px;
@@ -359,7 +361,16 @@ filter: blur(8px);
           font-family: 'Poppins', sans-serif;
           padding-bottom: 10px;
       }
-        
+      .backdrop{
+        width:100%;
+        height:100%;
+        position: fixed;
+        z-index: 100;
+        left:0;
+        top:0;
+        background: rgba(0, 0, 0, 0.5);
+      }
+      
                
         /* mobile */
 
@@ -403,9 +414,7 @@ filter: blur(8px);
           grid-template-columns: 1fr;
           width:600px;
          }
-         .flip-card {
-           width:100%;
-         }
+        
          .profile_title {
           margin-right: 16px;
          }

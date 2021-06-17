@@ -22,9 +22,10 @@ var projectInfo=[
  {
   type:'React',
   name:'Movie App',
-  description:'A Movie App built with React',
+  description:'A Movie App built with React with react. I use react-context to manage the state, I also made use of localStorage to save the data ',
   imgUrl:"https://image.tmdb.org/t/p/w1280/poSVFa61vWSCdl6PXthOvoCY6E0.jpg",
-  link:"https://quirky-ritchie-b8e786.netlify.app/"
+  link:"https://flamboyant-rosalind-2ef690.netlify.app/",
+  version:"https://quirky-ritchie-b8e786.netlify.app/"
   },
   {
      type:'React',

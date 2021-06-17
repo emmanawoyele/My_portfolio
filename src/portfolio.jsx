@@ -1,5 +1,3 @@
-import React, { Component } from 'react';
-
 
 function Portfolio(props) {
     return(
@@ -18,6 +16,7 @@ function Portfolio(props) {
            <div className="project_container">
          {props.projectComp}
            </div>
+           
         </div>
     )
     

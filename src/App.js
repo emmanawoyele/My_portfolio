@@ -1,9 +1,7 @@
-
 import React, { Component} from 'react';
-import ReactDOM from 'react-dom';
 import Typical from 'react-typical'
 import Particles from 'react-particles-js';
-import {BrowserRouter as Router,Switch,Route,Link} from "react-router-dom";
+import {BrowserRouter as Router,Switch,Route} from "react-router-dom";
 import  projectInfo from './project-info'
 import SideNavbarContainer from './sideNavbarContainer'
 import './App.css';
@@ -12,6 +10,8 @@ import About from './about_me'
 import Portfolio from './portfolio'
 import Contact from './contact';
 import PersonalCard from './personal_card'
+import Backdrop from './backdrop'
+
 class App extends Component {
   state = { 
     name:'Emmanuel Awoyele',
@@ -45,12 +45,11 @@ class App extends Component {
     const a = e.target.innerHTML;
      var b = this.state.projectInfo
   
-    b= b.filter((item)=>{
-      
+    b= b.filter((item)=> {
        switch(a){
         case "Html-Emails":
-          return item.type ===this.state.type_1
-          
+          return item.type ===this.state.type_1;
+        
           case "Shopify":
             return item.type ===this.state.type_2
             
@@ -59,10 +58,10 @@ class App extends Component {
               
               case "All":
               return this.state.projectInfo
-              break;
-            
+              
+            default:
        }
-
+return b
     })
       
   this.setState({
@@ -84,25 +83,27 @@ menuOpenerHandler=()=>{
     })
 
     const my_portfolio = this.state.myPortolio.map((item,id)=>{
+      console.log(item)
       return  <div className="flip-card" key={id +item}>
-   <a href ={item.link} target="_blank">
+   <a href ={item.link} target="blank">
      <div className="card_inner">
        <div className ="card_front">
        <img src={item.imgUrl} alt=""/>
        <div className="mobile-info">
-       <h1>Project Name:<span>{item.name}</span></h1>
-   <h1>Project Type:<span>{item.type}</span></h1>
+       <p>Project Name:<span>{item.name}</span></p>
+   <p>Project Type:<span>{item.type}</span></p>
+ 
  
        </div>
        </div>
        <div className="card_back">
       
          <div  className="card_back_text">
-         <h1>Project Name:<span>{item.name}</span></h1>
-   <h1>Project Type:<span>{item.type}</span></h1>
-   <h1>Project  description: <span>{item.description}</span></h1>
-  <h2  style={{fontSize:"20px", fontWeight:900,fontStyle:"italic"}}>{item.info}</h2> 
- 
+         <p>Project Name:<span>{item.name}</span></p>
+   <p>Project Type:<span>{item.type}</span></p>
+   <p>Project  description: <span>{item.description}</span></p>
+  <p  style={{fontSize:"20px", fontWeight:900,fontStyle:"italic"}}>{item.info}</p> 
+  <p style={{background:"green"}}>Version_1:<a href='https://quirky-ritchie-b8e786.netlify.app/'>Version 1</a></p>
          </div>
   
      </div>
@@ -118,6 +119,8 @@ menuOpenerHandler=()=>{
       <div>
         
        <HomePage menu_opener={this.menuOpenerHandler}/>
+        
+     <Backdrop/>
       <div>
         
         
@@ -185,8 +188,7 @@ menuOpenerHandler=()=>{
           }, 
         }} 
       /> 
-   
-     
+  
     
      </div>
      </div>
