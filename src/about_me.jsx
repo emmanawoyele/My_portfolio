@@ -3,7 +3,7 @@ function About(props){
   
  
     return( 
-        <div className="main">
+        <div >
               <div className="about_me" >
            <div className="aboutMe">
                <div className="profile_title">
@@ -15,11 +15,10 @@ function About(props){
        <div className="profile-des">
           <div className="profile_title_des">
               <h1>FrontEnd Developer</h1>
-              <p> I'm a Self-Taught Developer And a Passionate Learner With
-            The Ability To Create Responsive Websites Using HTML,
-             CSS, And Javascript and React.
-            I'm Comfortable To Work In 
-            a team Or Individually.
+              <p> A driven, passionate, and enthusiastic frontend developer who enjoyed over 10-years’ working in the Customer service  related  industry.  Constantly learning.. I am very driven to find solutions to problems , I enjoy learning new sets of Skills . A highly collaborative team player, adept at learning new technology, writing high-quality  code, and observing best practices. 
+ my  technical skills include 
+JavaScript, HTML 5, CSS 3, JS Framework React.js, software development lifecycle, Version Control Git, Github, RESTful  API’s, Object,  Bootstrap, Node, Mongodb,Liquid
+
            
           </p>
           

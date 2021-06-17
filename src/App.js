@@ -83,7 +83,7 @@ menuOpenerHandler=()=>{
     })
 
     const my_portfolio = this.state.myPortolio.map((item,id)=>{
-      console.log(item)
+    
       return  <div className="flip-card" key={id +item}>
    <a href ={item.link} target="blank">
      <div className="card_inner">
@@ -93,7 +93,7 @@ menuOpenerHandler=()=>{
        <p>Project Name:<span>{item.name}</span></p>
    <p>Project Type:<span>{item.type}</span></p>
  
- 
+
        </div>
        </div>
        <div className="card_back">
@@ -103,7 +103,7 @@ menuOpenerHandler=()=>{
    <p>Project Type:<span>{item.type}</span></p>
    <p>Project  description: <span>{item.description}</span></p>
   <p  style={{fontSize:"20px", fontWeight:900,fontStyle:"italic"}}>{item.info}</p> 
-  <p style={{background:"green"}}>Version_1:<a href='https://quirky-ritchie-b8e786.netlify.app/'>Version 1</a></p>
+  
          </div>
   
      </div>
@@ -116,7 +116,7 @@ menuOpenerHandler=()=>{
   
     })
     return ( 
-      <div>
+      <div className="main" >
         
        <HomePage menu_opener={this.menuOpenerHandler}/>
         

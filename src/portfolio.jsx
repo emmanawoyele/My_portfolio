@@ -1,7 +1,7 @@
 
 function Portfolio(props) {
     return(
-        <div className="main">
+        <div>
             <div className="about_me" >
            <div className="aboutMe">
                <div className="profile_title">

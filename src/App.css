@@ -46,11 +46,15 @@
   position:absolute;
 }
 .main{
-  /* margin-left:300px; */
-  text-align: center;
+  margin-left:300px;
+  /* text-align: center;
   display: flex;
-  flex-direction: column;
+  flex-direction: column; 
+  gap:10px */
 }
+/* .main >*{
+  width: 100%;
+} */
 .menu_opener{
   display: none;
 }
@@ -67,7 +71,7 @@ filter: blur(8px);
 .name_intro{
   position:absolute;
   top:40%;
-  left: 40%;
+  left: 20%;
   color:white;
   z-index: 20;
 }
@@ -216,6 +220,7 @@ filter: blur(8px);
     /* font-family: 'Playfair Display',sans-serif; */
     /* line-height: 21px; */
     letter-spacing: 4px;
+    padding-left: 23px;
   }
   .profile_title_des  p{
     color: rgb(255, 254, 254);
