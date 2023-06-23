@@ -1,7 +1,7 @@
-
+import React from "react"
 function Portfolio(props) {
     return(
-        <div>
+        <div className='main' >
             <div className="about_me" >
            <div className="aboutMe">
                <div className="profile_title">

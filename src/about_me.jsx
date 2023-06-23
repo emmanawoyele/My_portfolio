@@ -1,9 +1,9 @@
-
+import React from "react"
 function About(props){
   
  
     return( 
-        <div >
+        <div className='main' >
               <div className="about_me" >
            <div className="aboutMe">
                <div className="profile_title">
@@ -27,7 +27,10 @@ JavaScript, HTML 5, CSS 3, JS Framework React.js, software development lifecycle
           {props.p}
               </div> 
           </div>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#17181B" fill-opacity="1" d="M0,32L48,69.3C96,107,192,181,288,176C384,171,480,85,576,48C672,11,768,21,864,26.7C960,32,1056,32,1152,58.7C1248,85,1344,139,1392,165.3L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg> 
+          <div className="Svg_logo">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#17181B" fill-opacity="1" d="M0,32L48,69.3C96,107,192,181,288,176C384,171,480,85,576,48C672,11,768,21,864,26.7C960,32,1056,32,1152,58.7C1248,85,1344,139,1392,165.3L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg> 
+
+          </div>
         </div>
         
   )

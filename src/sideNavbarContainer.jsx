@@ -7,12 +7,16 @@ class SideNavbarContainer extends Component {
       const showBar =this.props.hideBar
       if(showBar===true){
 return    <div className="side_bar_nav">
-              
+                <div className="move">
+      
+          </div>
+      
 <div className="profile_image">
            <div className="profile_name">
                <h1>{this.props.profile_name}</h1>
            </div>
        </div>
+
        <ul className="menu_list">
          
      <li>
@@ -42,6 +46,7 @@ return    <div className="side_bar_nav">
             
         <div>
           {showBar}
+        
         </div>
          );
     }

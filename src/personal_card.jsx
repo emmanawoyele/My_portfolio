@@ -1,4 +1,4 @@
-
+import React from "react"
 function PersonalCard(props) {
     return(
         <div className="profile_title_des">

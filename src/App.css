@@ -87,7 +87,7 @@ filter: blur(8px);
 }
 .side_bar_nav{
   background-color: #17181B;
-  width: 20vw;
+  width: 13%;
   height: 100%;
   position: fixed;
   top: 0;
@@ -371,20 +371,57 @@ filter: blur(8px);
         height:100%;
         position: fixed;
         z-index: 100;
-        left:0;
+        left:40%;
         top:0;
+        display: none;
         background: rgba(0, 0, 0, 0.5);
       }
       
                
         /* mobile */
+        @media only screen and (max-width: 925px) {
+          .main{
+          margin-left: 194px;
+          }
+      
+      }
+      
+      @media only screen and (max-width: 744px) {
+        .main{
+        margin-left: 108px;
+        }
+        .profile_name h1{
+          font-size: 1rem;
+        }
+        .menu_list li{
+          font-size: 1rem;
+        }
+    
+    }
+
+    @media only screen and (max-width: 813px) {
+      .main{
+      margin-left: 108px;
+      }
+      .profile-des{
+grid-template-columns: 1fr;
+      }
+      .profile_title_des{
+        padding-left: 0;
+      }
+    }
 
         @media only screen and (max-width: 600px) {
+          .main{
+            margin-left:0!important;
+          }
           .profile-des{
             width:0px;
-            grid-template-columns: 400px;
+            grid-template-columns: 1fr;
+            padding-left: 30px;
             
           }
+          
           .flip-card:hover .card_inner {
             transform: rotateY(0deg);
           }
@@ -425,6 +462,7 @@ filter: blur(8px);
          }
          .portfolio_heading ul{
            display: block;
+           border-radius: 30px;
          }
          .portfolio_heading ul li{
           padding: 10px 13px 10px 13px;
@@ -432,7 +470,22 @@ filter: blur(8px);
          .menu_opener{
            display: block;
          }
+         .backdrop{
+          display: block;
         }
+        }
+
+    @media only screen and (max-width:501px) {
+          .main{
+            }
+            .side_bar_nav{
+              width:60vw;
+            }
+            .menu_list li{
+              font-size: 16px;
+            }
+          }
+
         @media only screen and (max-width: 477px) {
           
           
@@ -443,10 +496,12 @@ filter: blur(8px);
           
           .side_bar_nav{
             width:60vw;
+         
           }
           .menu_list li{
             font-size: 16px;
           }
+      
          
         
   .profile-des{
@@ -464,3 +519,5 @@ filter: blur(8px);
   
        }
         
+
+  

@@ -26,7 +26,11 @@ function About(props){
           
            </div>
           <div>
-          {props.p}
+        <ul>
+            <li>
+            {/* {props.p} */}
+            </li>
+            </ul>  
               </div> 
           </div>
           
